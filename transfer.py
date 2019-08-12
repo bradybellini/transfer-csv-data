@@ -1,7 +1,7 @@
 import csv
 
 def open_files():
-	with open('testing.csv', 'r') as csv_file, open('bad_score.csv', 'w', newline='') as bad_score:
+	with open('filename.csv', 'r') as csv_file, open('bad_score.csv', 'w', newline='') as bad_score:
 		csv_reader = csv.reader(csv_file, dialect='excel')
 		csv_writer = csv.writer(bad_score, dialect='excel')
 		next(csv_reader)
